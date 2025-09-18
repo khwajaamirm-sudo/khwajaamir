@@ -3,377 +3,374 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Khwaja Amir M Khwajazada - Professional Portfolio</title>
+    <title>Khwaja Amir M Khwajazada - Elite Professional Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap');
+        
         * {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-            font-weight: 400;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
         }
         
-        h1, h2, h3, .font-display {
-            font-family: Georgia, 'Times New Roman', Times, serif;
-            font-weight: 700;
-            letter-spacing: -0.025em;
-            line-height: 1.1;
+        .font-display {
+            font-family: 'Playfair Display', Georgia, serif;
         }
         
-        .font-elegant {
-            font-family: Georgia, 'Times New Roman', Times, serif;
-            font-weight: 400;
-            line-height: 1.65;
+        body {
+            background: #0a0a0a;
+            overflow-x: hidden;
         }
         
-        .font-modern {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
-            font-weight: 500;
-            letter-spacing: 0.025em;
+        .luxury-gradient {
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 25%, #16213e 50%, #0f3460 75%, #533483 100%);
         }
         
-        .font-luxury {
-            font-family: Georgia, 'Times New Roman', Times, serif;
-            font-weight: 600;
-            font-style: italic;
-            letter-spacing: -0.01em;
-        }
-        
-        .gradient-bg {
-            background: linear-gradient(135deg, #0f172a 0%, #1e293b 25%, #334155 50%, #1e40af 75%, #3b82f6 100%);
-            position: relative;
-        }
-        
-        .gradient-bg::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E") repeat;
-            pointer-events: none;
-        }
-        
-        .glass-effect {
-            background: rgba(255, 255, 255, 0.05);
-            backdrop-filter: blur(24px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
-        }
-        
-        .dark-glass {
-            background: rgba(15, 23, 42, 0.9);
-            backdrop-filter: blur(24px);
-            border: 1px solid rgba(59, 130, 246, 0.1);
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
-        }
-        
-        .text-gradient {
-            background: linear-gradient(135deg, #3b82f6, #2563eb, #1d4ed8);
+        .gold-gradient {
+            background: linear-gradient(135deg, #ffd700, #ffed4e, #fff59d);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
         }
         
-        .accent-gradient {
-            background: linear-gradient(135deg, #3b82f6 0%, #2563eb 50%, #1d4ed8 100%);
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
         }
         
-        .hover-lift {
-            transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
-            position: relative;
-        }
-        
-        .hover-lift:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 25px 50px rgba(0,0,0,0.25);
-        }
-        
-        .hover-lift::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(37, 99, 235, 0.05));
-            opacity: 0;
-            transition: opacity 0.6s ease;
-            border-radius: inherit;
-            pointer-events: none;
-        }
-        
-        .hover-lift:hover::before {
-            opacity: 1;
-        }
-        
-        .floating-animation {
-            animation: float 6s ease-in-out infinite;
-        }
-        
-        @keyframes float {
-            0%, 100% { transform: translateY(0px) rotate(0deg); }
-            33% { transform: translateY(-20px) rotate(2deg); }
-            66% { transform: translateY(-10px) rotate(-1deg); }
-        }
-        
-        .slide-in-left {
-            opacity: 0;
-            transform: translateX(-50px);
-            transition: all 0.8s ease-out;
-        }
-        
-        .slide-in-right {
-            opacity: 0;
-            transform: translateX(50px);
-            transition: all 0.8s ease-out;
-        }
-        
-        .fade-in-up {
-            opacity: 0;
-            transform: translateY(30px);
-            transition: all 0.8s ease-out;
-        }
-        
-        .animate-in {
-            opacity: 1;
-            transform: translateX(0) translateY(0);
-        }
-        
-        .skill-progress {
-            width: 0%;
-            transition: width 2s ease-out;
-        }
-        
-        .skill-progress.animate {
-            width: var(--width);
-        }
-        
-        .timeline-item {
-            position: relative;
-        }
-        
-        .timeline-item::before {
-            content: '';
-            position: absolute;
-            left: -25px;
-            top: 0;
-            width: 2px;
-            height: 100%;
-            background: linear-gradient(to bottom, #10b981, #059669);
-        }
-        
-        .timeline-item::after {
-            content: '';
-            position: absolute;
-            left: -33px;
-            top: 20px;
-            width: 16px;
-            height: 16px;
-            border-radius: 50%;
-            background: #10b981;
-            border: 3px solid white;
-            box-shadow: 0 0 0 3px #10b981;
-        }
-        
-        .parallax-bg {
-            background-attachment: fixed;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-        
-        .custom-shape {
-            clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-        }
-        
-        .rotating-border {
+        .premium-card {
+            background: linear-gradient(145deg, rgba(26, 26, 46, 0.8), rgba(15, 52, 96, 0.6));
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 215, 0, 0.1);
             position: relative;
             overflow: hidden;
         }
         
-        .rotating-border::before {
-            content: '';
-            position: absolute;
-            top: -2px;
-            left: -2px;
-            right: -2px;
-            bottom: -2px;
-            background: linear-gradient(45deg, #10b981, #059669, #047857, #10b981);
-            border-radius: inherit;
-            z-index: -1;
-            animation: rotate 4s linear infinite;
-        }
-        
-        @keyframes rotate {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
-        }
-        
-
-        
-        .particle {
-            position: absolute;
-            width: 4px;
-            height: 4px;
-            background: rgba(59, 130, 246, 0.7);
-            border-radius: 50%;
-            animation: particle-float 8s infinite ease-in-out;
-            box-shadow: 0 0 10px rgba(59, 130, 246, 0.3);
-        }
-        
-        @keyframes particle-float {
-            0%, 100% { transform: translateY(0) translateX(0) scale(1); opacity: 0; }
-            10% { opacity: 1; }
-            90% { opacity: 1; }
-            100% { transform: translateY(-100vh) translateX(50px) scale(0); opacity: 0; }
-        }
-        
-        .section-divider {
-            height: 3px;
-            background: linear-gradient(90deg, transparent, #3b82f6, #2563eb, #3b82f6, transparent);
-            margin: 2rem 0;
-            position: relative;
-        }
-        
-        .section-divider::before {
-            content: '';
-            position: absolute;
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%, -50%);
-            width: 12px;
-            height: 12px;
-            background: #2563eb;
-            border-radius: 50%;
-            box-shadow: 0 0 20px rgba(37, 99, 235, 0.6);
-        }
-        
-        .professional-card {
-            background: linear-gradient(145deg, rgba(15, 23, 42, 0.95), rgba(30, 41, 59, 0.85));
-            border: 1px solid rgba(59, 130, 246, 0.15);
-            position: relative;
-            overflow: hidden;
-        }
-        
-        .professional-card::before {
+        .premium-card::before {
             content: '';
             position: absolute;
             top: 0;
             left: -100%;
             width: 100%;
             height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(59, 130, 246, 0.1), transparent);
+            background: linear-gradient(90deg, transparent, rgba(255, 215, 0, 0.1), transparent);
             transition: left 0.8s ease;
         }
         
-        .professional-card:hover::before {
+        .premium-card:hover::before {
             left: 100%;
         }
         
-        .luxury-border {
-            border: 2px solid transparent;
-            background: linear-gradient(145deg, rgba(15, 23, 42, 0.95), rgba(30, 41, 59, 0.85)) padding-box,
-                        linear-gradient(145deg, #3b82f6, #2563eb, #60a5fa) border-box;
+        .luxury-hover {
+            transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+            position: relative;
+        }
+        
+        .luxury-hover:hover {
+            transform: translateY(-12px) scale(1.02);
+            box-shadow: 0 30px 60px rgba(255, 215, 0, 0.15), 0 0 0 1px rgba(255, 215, 0, 0.2);
+        }
+        
+        .floating-particles {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 1;
+        }
+        
+        .particle {
+            position: absolute;
+            width: 3px;
+            height: 3px;
+            background: #ffd700;
+            border-radius: 50%;
+            opacity: 0.7;
+            animation: float-particle 15s infinite linear;
+            box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+        }
+        
+        @keyframes float-particle {
+            0% {
+                transform: translateY(100vh) translateX(0) rotate(0deg);
+                opacity: 0;
+            }
+            10% {
+                opacity: 0.7;
+            }
+            90% {
+                opacity: 0.7;
+            }
+            100% {
+                transform: translateY(-100px) translateX(100px) rotate(360deg);
+                opacity: 0;
+            }
+        }
+        
+        .geometric-bg {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-image: 
+                radial-gradient(circle at 25% 25%, rgba(255, 215, 0, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 75% 75%, rgba(83, 52, 131, 0.1) 0%, transparent 50%),
+                linear-gradient(45deg, transparent 30%, rgba(255, 255, 255, 0.02) 50%, transparent 70%);
+            animation: geometric-float 20s ease-in-out infinite;
+        }
+        
+        @keyframes geometric-float {
+            0%, 100% { transform: rotate(0deg) scale(1); }
+            50% { transform: rotate(2deg) scale(1.05); }
+        }
+        
+        .reveal-animation {
+            opacity: 0;
+            transform: translateY(50px);
+            transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+        
+        .reveal-animation.revealed {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .skill-meter {
+            width: 0%;
+            transition: width 2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            background: linear-gradient(90deg, #ffd700, #ffed4e);
+            box-shadow: 0 0 20px rgba(255, 215, 0, 0.4);
+            position: relative;
+        }
+        
+        .skill-meter::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+            animation: shimmer 2s infinite;
+        }
+        
+        @keyframes shimmer {
+            0% { transform: translateX(-100%); }
+            100% { transform: translateX(100%); }
+        }
+        
+        .skill-meter.animate {
+            width: var(--width);
+        }
+        
+        .nav-link {
+            position: relative;
+            color: rgba(255, 255, 255, 0.8);
+            transition: all 0.3s ease;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: linear-gradient(90deg, #ffd700, #ffed4e);
+            transition: width 0.3s ease;
+            box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+        }
+        
+        .nav-link:hover,
+        .nav-link.active {
+            color: #ffd700;
+        }
+        
+        .nav-link:hover::after,
+        .nav-link.active::after {
+            width: 100%;
+        }
+        
+        .luxury-button {
+            background: linear-gradient(135deg, #ffd700, #ffed4e);
+            color: #0a0a0a;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+        
+        .luxury-button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+            transition: left 0.5s ease;
+        }
+        
+        .luxury-button:hover::before {
+            left: 100%;
+        }
+        
+        .luxury-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(255, 215, 0, 0.3);
+        }
+        
+        .timeline-line {
+            position: relative;
+        }
+        
+        .timeline-line::before {
+            content: '';
+            position: absolute;
+            left: 20px;
+            top: 0;
+            width: 2px;
+            height: 100%;
+            background: linear-gradient(to bottom, #ffd700, rgba(255, 215, 0, 0.3));
+        }
+        
+        .timeline-dot {
+            position: absolute;
+            left: 12px;
+            top: 24px;
+            width: 18px;
+            height: 18px;
+            background: #ffd700;
+            border-radius: 50%;
+            border: 3px solid #0a0a0a;
+            box-shadow: 0 0 20px rgba(255, 215, 0, 0.6);
+            z-index: 2;
         }
         
         .stats-counter {
             font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            background: linear-gradient(135deg, #ffd700, #ffed4e);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-shadow: 0 0 30px rgba(255, 215, 0, 0.3);
+        }
+        
+        .premium-shadow {
+            box-shadow: 
+                0 4px 20px rgba(0, 0, 0, 0.3),
+                0 0 0 1px rgba(255, 215, 0, 0.1),
+                inset 0 1px 0 rgba(255, 255, 255, 0.1);
+        }
+        
+        .text-shadow-gold {
+            text-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
+        }
+        
+        .hero-title {
+            font-size: clamp(2.5rem, 8vw, 6rem);
+            line-height: 1.1;
             font-weight: 800;
-            color: #3b82f6;
-            text-shadow: 0 0 20px rgba(59, 130, 246, 0.4);
+            letter-spacing: -0.02em;
+        }
+        
+        .section-title {
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            font-weight: 700;
+            letter-spacing: -0.01em;
         }
     </style>
 </head>
-<body class="bg-slate-900 text-white overflow-x-hidden">
+<body class="luxury-gradient text-white">
     <!-- Floating Particles -->
-    <div class="fixed inset-0 pointer-events-none z-0">
+    <div class="floating-particles">
         <div class="particle" style="left: 10%; animation-delay: 0s;"></div>
-        <div class="particle" style="left: 20%; animation-delay: 2s;"></div>
-        <div class="particle" style="left: 30%; animation-delay: 4s;"></div>
-        <div class="particle" style="left: 40%; animation-delay: 1s;"></div>
-        <div class="particle" style="left: 50%; animation-delay: 3s;"></div>
-        <div class="particle" style="left: 60%; animation-delay: 5s;"></div>
-        <div class="particle" style="left: 70%; animation-delay: 2.5s;"></div>
-        <div class="particle" style="left: 80%; animation-delay: 4.5s;"></div>
-        <div class="particle" style="left: 90%; animation-delay: 1.5s;"></div>
+        <div class="particle" style="left: 20%; animation-delay: 3s;"></div>
+        <div class="particle" style="left: 30%; animation-delay: 6s;"></div>
+        <div class="particle" style="left: 40%; animation-delay: 2s;"></div>
+        <div class="particle" style="left: 50%; animation-delay: 8s;"></div>
+        <div class="particle" style="left: 60%; animation-delay: 4s;"></div>
+        <div class="particle" style="left: 70%; animation-delay: 7s;"></div>
+        <div class="particle" style="left: 80%; animation-delay: 1s;"></div>
+        <div class="particle" style="left: 90%; animation-delay: 5s;"></div>
     </div>
 
     <!-- Navigation -->
-    <nav class="fixed top-0 w-full z-50 glass-effect">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6">
-            <div class="flex justify-between items-center py-4">
-                <div class="text-xl sm:text-2xl font-bold text-gradient font-display tracking-wider">K.A.M</div>
-                <div class="hidden lg:flex space-x-8">
-                    <a href="#home" class="nav-link text-white hover:text-blue-400 transition-colors duration-300 relative font-modern text-sm uppercase tracking-widest">Home</a>
-                    <a href="#about" class="nav-link text-white hover:text-blue-400 transition-colors duration-300 relative font-modern text-sm uppercase tracking-widest">About</a>
-                    <a href="#education" class="nav-link text-white hover:text-blue-400 transition-colors duration-300 relative font-modern text-sm uppercase tracking-widest">Education</a>
-                    <a href="#experience" class="nav-link text-white hover:text-blue-400 transition-colors duration-300 relative font-modern text-sm uppercase tracking-widest">Experience</a>
-                    <a href="#skills" class="nav-link text-white hover:text-blue-400 transition-colors duration-300 relative font-modern text-sm uppercase tracking-widest">Skills</a>
-                    <a href="#contact" class="nav-link text-white hover:text-blue-400 transition-colors duration-300 relative font-modern text-sm uppercase tracking-widest">Contact</a>
+    <nav class="fixed top-0 w-full z-50 glass-card">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex justify-between items-center py-6">
+                <div class="text-2xl font-bold gold-gradient font-display">A.M.K</div>
+                <div class="hidden lg:flex space-x-10">
+                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#experience" class="nav-link">Experience</a>
+                    <a href="#skills" class="nav-link">Skills</a>
+                    <a href="#contact" class="nav-link">Contact</a>
                 </div>
                 <button id="mobile-menu" class="lg:hidden text-white p-2">
                     <i class="fas fa-bars text-xl"></i>
                 </button>
             </div>
             <!-- Mobile Menu -->
-            <div id="mobile-menu-items" class="lg:hidden hidden bg-black bg-opacity-90 backdrop-blur-lg rounded-lg mt-2 p-4">
+            <div id="mobile-menu-items" class="lg:hidden hidden glass-card rounded-lg mt-4 p-6">
                 <div class="flex flex-col space-y-4">
-                    <a href="#home" class="mobile-nav-link text-white hover:text-blue-400 transition-colors duration-300 py-2">Home</a>
-                    <a href="#about" class="mobile-nav-link text-white hover:text-blue-400 transition-colors duration-300 py-2">About</a>
-                    <a href="#education" class="mobile-nav-link text-white hover:text-blue-400 transition-colors duration-300 py-2">Education</a>
-                    <a href="#experience" class="mobile-nav-link text-white hover:text-blue-400 transition-colors duration-300 py-2">Experience</a>
-                    <a href="#skills" class="mobile-nav-link text-white hover:text-blue-400 transition-colors duration-300 py-2">Skills</a>
-                    <a href="#contact" class="mobile-nav-link text-white hover:text-blue-400 transition-colors duration-300 py-2">Contact</a>
+                    <a href="#home" class="mobile-nav-link text-white hover:text-yellow-400 py-2">Home</a>
+                    <a href="#about" class="mobile-nav-link text-white hover:text-yellow-400 py-2">About</a>
+                    <a href="#experience" class="mobile-nav-link text-white hover:text-yellow-400 py-2">Experience</a>
+                    <a href="#skills" class="mobile-nav-link text-white hover:text-yellow-400 py-2">Skills</a>
+                    <a href="#contact" class="mobile-nav-link text-white hover:text-yellow-400 py-2">Contact</a>
                 </div>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="min-h-screen gradient-bg flex items-center justify-center relative overflow-hidden">
-        <div class="absolute inset-0 bg-black bg-opacity-30"></div>
+    <section id="home" class="min-h-screen flex items-center justify-center relative overflow-hidden pt-20">
+        <div class="geometric-bg"></div>
         
-        <!-- Floating geometric shapes -->
-        <div class="absolute top-20 left-20 w-32 h-32 border-2 border-white border-opacity-20 rounded-full floating-animation"></div>
-        <div class="absolute bottom-32 right-32 w-24 h-24 border-2 border-white border-opacity-20 transform rotate-45 floating-animation" style="animation-delay: -2s;"></div>
-        <div class="absolute top-1/2 left-10 w-16 h-16 bg-white bg-opacity-10 rounded-lg floating-animation" style="animation-delay: -4s;"></div>
-        
-        <div class="text-center px-4 sm:px-6 max-w-5xl mx-auto relative z-10">
-            <div class="mb-8 sm:mb-12">
-                <div class="w-32 h-32 sm:w-40 sm:h-40 lg:w-48 lg:h-48 mx-auto mb-6 sm:mb-8 relative">
-                    <div class="rotating-border w-full h-full rounded-full bg-gray-800 flex items-center justify-center overflow-hidden">
-                        <img src="Amir.png" alt="Khwaja Amir M Khwajazada" class="w-full h-full object-cover rounded-full" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                        <div class="w-full h-full flex items-center justify-center" style="display: none;">
-                            <i class="fas fa-user-tie text-3xl sm:text-4xl lg:text-6xl text-white"></i>
+        <div class="max-w-6xl mx-auto px-6 text-center relative z-10">
+            <div class="mb-12">
+                <div class="w-40 h-40 mx-auto mb-10 relative">
+                    <div class="absolute inset-0 rounded-full bg-gradient-to-r from-yellow-400 to-yellow-600 animate-pulse"></div>
+                    <div class="absolute inset-2 rounded-full overflow-hidden premium-shadow">
+                        <img src="Amir.png" alt="Khwaja Amir M Khwajazada" class="w-full h-full object-cover" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="w-full h-full flex items-center justify-center bg-gradient-to-br from-gray-800 to-gray-900" style="display: none;">
+                            <i class="fas fa-user-tie text-5xl text-yellow-400"></i>
                         </div>
                     </div>
                 </div>
             </div>
             
-            <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-bold mb-6 sm:mb-8 leading-tight">
-                <span class="block text-white font-light tracking-wide">Khwaja Amir M</span>
-                <span class="block text-gradient font-black tracking-tight">Khwajazada</span>
+            <h1 class="hero-title mb-8 font-display">
+                <span class="block text-white text-shadow-gold">Khwaja Amir M</span>
+                <span class="block gold-gradient">Khwajazada</span>
             </h1>
             
-            <div class="max-w-4xl mx-auto mb-8 sm:mb-12">
-                <p class="text-lg sm:text-xl md:text-2xl lg:text-3xl mb-4 font-elegant text-gray-100 px-2 tracking-wide">
+            <div class="max-w-4xl mx-auto mb-12">
+                <p class="text-2xl md:text-3xl mb-8 text-gray-300 font-light">
                     Elite Finance & Sales Professional
                 </p>
-                <div class="flex flex-wrap justify-center gap-2 sm:gap-4 text-sm sm:text-base text-gray-300 px-4">
-                    <span class="bg-white bg-opacity-10 px-3 py-1 rounded-full">Strategic Leadership</span>
-                    <span class="bg-white bg-opacity-10 px-3 py-1 rounded-full">Multi-Industry Expert</span>
-                    <span class="bg-white bg-opacity-10 px-3 py-1 rounded-full">Performance Excellence</span>
+                <div class="flex flex-wrap justify-center gap-4 text-sm">
+                    <span class="glass-card px-6 py-3 rounded-full border border-yellow-400/20">Strategic Leadership</span>
+                    <span class="glass-card px-6 py-3 rounded-full border border-yellow-400/20">Multi-Industry Expert</span>
+                    <span class="glass-card px-6 py-3 rounded-full border border-yellow-400/20">Performance Excellence</span>
                 </div>
             </div>
             
-            <div class="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center px-4">
-                <a href="mailto:khwajazadaamir@yahoo.com" class="glass-effect px-6 sm:px-10 py-3 sm:py-4 rounded-full font-semibold hover-lift text-white border border-white border-opacity-30 inline-block text-sm sm:text-base">
-                    <i class="fas fa-envelope mr-2"></i>
+            <div class="flex flex-col sm:flex-row gap-6 justify-center">
+                <a href="mailto:khwajazadaamir@yahoo.com" class="luxury-button px-10 py-4 rounded-full font-semibold inline-block">
+                    <i class="fas fa-envelope mr-3"></i>
                     Get In Touch
                 </a>
-                <button class="bg-white bg-opacity-20 px-6 sm:px-10 py-3 sm:py-4 rounded-full font-semibold hover-lift text-white text-sm sm:text-base">
-                    <i class="fas fa-download mr-2"></i>
+                <button class="glass-card px-10 py-4 rounded-full font-semibold border border-yellow-400/30 hover:border-yellow-400/60 transition-all duration-300">
+                    <i class="fas fa-download mr-3"></i>
                     Download CV
                 </button>
             </div>
@@ -381,159 +378,93 @@
     </section>
 
     <!-- Statistics Section -->
-    <section class="py-12 sm:py-16 bg-slate-800 border-y border-slate-700">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6">
+    <section class="py-20 relative">
+        <div class="max-w-7xl mx-auto px-6">
             <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
-                <div class="text-center">
-                    <div class="stats-counter text-3xl sm:text-4xl lg:text-5xl mb-2">9+</div>
-                    <p class="text-gray-400 text-sm sm:text-base">Years Experience</p>
+                <div class="text-center reveal-animation">
+                    <div class="stats-counter text-5xl lg:text-6xl mb-4">9+</div>
+                    <p class="text-gray-400 text-lg">Years Experience</p>
                 </div>
-                <div class="text-center">
-                    <div class="stats-counter text-3xl sm:text-4xl lg:text-5xl mb-2">4</div>
-                    <p class="text-gray-400 text-sm sm:text-base">Industries Mastered</p>
+                <div class="text-center reveal-animation">
+                    <div class="stats-counter text-5xl lg:text-6xl mb-4">4</div>
+                    <p class="text-gray-400 text-lg">Industries Mastered</p>
                 </div>
-                <div class="text-center">
-                    <div class="stats-counter text-3xl sm:text-4xl lg:text-5xl mb-2">98%</div>
-                    <p class="text-gray-400 text-sm sm:text-base">Client Satisfaction</p>
+                <div class="text-center reveal-animation">
+                    <div class="stats-counter text-5xl lg:text-6xl mb-4">98%</div>
+                    <p class="text-gray-400 text-lg">Client Satisfaction</p>
                 </div>
-                <div class="text-center">
-                    <div class="stats-counter text-3xl sm:text-4xl lg:text-5xl mb-2">150+</div>
-                    <p class="text-gray-400 text-sm sm:text-base">Successful Projects</p>
+                <div class="text-center reveal-animation">
+                    <div class="stats-counter text-5xl lg:text-6xl mb-4">150+</div>
+                    <p class="text-gray-400 text-lg">Successful Projects</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="py-16 sm:py-24 lg:py-32 bg-slate-800 relative">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6">
-            <div class="text-center mb-12 sm:mb-16 lg:mb-20 fade-in-up">
-                <h2 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 text-gradient tracking-wide">About Me</h2>
-                <div class="section-divider w-24 sm:w-32 mx-auto"></div>
-                <p class="text-lg sm:text-xl text-gray-300 max-w-3xl mx-auto px-4 font-elegant">
+    <section id="about" class="py-32 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-20 reveal-animation">
+                <h2 class="section-title mb-6 gold-gradient font-display">About Me</h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-yellow-400 to-yellow-600 mx-auto mb-8"></div>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto">
                     Passionate professional dedicated to excellence in finance and sales
                 </p>
             </div>
             
-            <div class="grid lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 items-center">
-                <div class="slide-in-left">
-                    <div class="professional-card luxury-border p-6 sm:p-8 lg:p-10 rounded-2xl lg:rounded-3xl hover-lift">
-                        <div class="flex flex-col sm:flex-row items-start sm:items-center mb-6 sm:mb-8">
-                            <div class="w-12 h-12 sm:w-16 sm:h-16 accent-gradient rounded-xl sm:rounded-2xl flex items-center justify-center mb-4 sm:mb-0 sm:mr-6">
-                                <i class="fas fa-crown text-lg sm:text-2xl text-white"></i>
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div class="reveal-animation">
+                    <div class="premium-card luxury-hover p-10 rounded-3xl">
+                        <div class="flex items-center mb-8">
+                            <div class="w-16 h-16 bg-gradient-to-r from-yellow-400 to-yellow-600 rounded-2xl flex items-center justify-center mr-6">
+                                <i class="fas fa-crown text-2xl text-black"></i>
                             </div>
-                            <h3 class="text-2xl sm:text-3xl font-bold text-gradient font-luxury">Professional Journey</h3>
+                            <h3 class="text-3xl font-bold gold-gradient font-display">Professional Journey</h3>
                         </div>
-                        <p class="text-gray-300 leading-relaxed text-base sm:text-lg mb-4 sm:mb-6 font-elegant">
-                            Born on November 6, 1995, in Kabul, Afghanistan, I am a dedicated finance and sales professional 
+                        <p class="text-gray-300 leading-relaxed text-lg mb-6">
+                            Born on November 7, 1995, in Kabul, Afghanistan, I am a dedicated finance and sales professional 
                             with extensive experience across multiple industries including pharmaceuticals, luxury goods, 
                             and agricultural products.
                         </p>
-                        <p class="text-gray-300 leading-relaxed text-base sm:text-lg font-elegant">
+                        <p class="text-gray-300 leading-relaxed text-lg">
                             My career is built on a foundation of analytical thinking, exceptional communication skills, 
                             and an unwavering commitment to delivering results that exceed expectations.
                         </p>
                     </div>
                 </div>
                 
-                <div class="slide-in-right">
-                    <div class="grid grid-cols-2 gap-4 sm:gap-6">
-                        <div class="professional-card p-4 sm:p-6 lg:p-8 rounded-xl sm:rounded-2xl text-center hover-lift">
-                            <div class="w-12 h-12 accent-gradient rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-4">
-                                <i class="fas fa-bullseye text-white text-lg"></i>
+                <div class="reveal-animation">
+                    <div class="grid grid-cols-2 gap-6">
+                        <div class="premium-card luxury-hover p-8 rounded-2xl text-center">
+                            <div class="w-14 h-14 bg-gradient-to-r from-blue-400 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                                <i class="fas fa-bullseye text-white text-xl"></i>
                             </div>
-                            <h4 class="text-lg sm:text-xl font-bold text-gradient mb-1 sm:mb-2">Mission</h4>
-                            <p class="text-gray-300 text-sm sm:text-base">Excellence in every endeavor</p>
+                            <h4 class="text-xl font-bold gold-gradient mb-3">Mission</h4>
+                            <p class="text-gray-400">Excellence in every endeavor</p>
                         </div>
                         
-                        <div class="professional-card p-4 sm:p-6 lg:p-8 rounded-xl sm:rounded-2xl text-center hover-lift">
-                            <div class="w-12 h-12 accent-gradient rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-4">
-                                <i class="fas fa-eye text-white text-lg"></i>
+                        <div class="premium-card luxury-hover p-8 rounded-2xl text-center">
+                            <div class="w-14 h-14 bg-gradient-to-r from-purple-400 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                                <i class="fas fa-eye text-white text-xl"></i>
                             </div>
-                            <h4 class="text-lg sm:text-xl font-bold text-gradient mb-1 sm:mb-2">Vision</h4>
-                            <p class="text-gray-300 text-sm sm:text-base">Transforming business landscapes</p>
+                            <h4 class="text-xl font-bold gold-gradient mb-3">Vision</h4>
+                            <p class="text-gray-400">Transforming business landscapes</p>
                         </div>
                         
-                        <div class="professional-card p-4 sm:p-6 lg:p-8 rounded-xl sm:rounded-2xl text-center hover-lift">
-                            <div class="w-12 h-12 accent-gradient rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-4">
-                                <i class="fas fa-briefcase text-white text-lg"></i>
+                        <div class="premium-card luxury-hover p-8 rounded-2xl text-center">
+                            <div class="w-14 h-14 bg-gradient-to-r from-green-400 to-green-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                                <i class="fas fa-briefcase text-white text-xl"></i>
                             </div>
-                            <h4 class="text-lg sm:text-xl font-bold text-gradient mb-1 sm:mb-2">Experience</h4>
-                            <p class="text-gray-300 text-sm sm:text-base">Multi-industry expertise</p>
+                            <h4 class="text-xl font-bold gold-gradient mb-3">Experience</h4>
+                            <p class="text-gray-400">Multi-industry expertise</p>
                         </div>
                         
-                        <div class="professional-card p-4 sm:p-6 lg:p-8 rounded-xl sm:rounded-2xl text-center hover-lift">
-                            <div class="w-12 h-12 accent-gradient rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-4">
-                                <i class="fas fa-chart-line text-white text-lg"></i>
+                        <div class="premium-card luxury-hover p-8 rounded-2xl text-center">
+                            <div class="w-14 h-14 bg-gradient-to-r from-red-400 to-red-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                                <i class="fas fa-chart-line text-white text-xl"></i>
                             </div>
-                            <h4 class="text-lg sm:text-xl font-bold text-gradient mb-1 sm:mb-2">Growth</h4>
-                            <p class="text-gray-300 text-sm sm:text-base">Continuous improvement</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Education Section -->
-    <section id="education" class="py-16 sm:py-24 lg:py-32 gradient-bg custom-shape relative">
-        <div class="absolute inset-0 bg-black bg-opacity-40"></div>
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
-            <div class="text-center mb-12 sm:mb-16 lg:mb-20 fade-in-up">
-                <h2 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 text-white tracking-wide">Education</h2>
-                <div class="section-divider w-24 sm:w-32 mx-auto"></div>
-            </div>
-            
-            <div class="max-w-4xl mx-auto">
-                <div class="space-y-8 sm:space-y-12">
-                    <div class="timeline-item pl-8 sm:pl-12 lg:pl-16 fade-in-up">
-                        <div class="glass-effect p-4 sm:p-6 lg:p-8 rounded-xl sm:rounded-2xl hover-lift">
-                            <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-3 sm:mb-4">
-                                <div>
-                                    <h3 class="text-xl sm:text-2xl font-bold text-white mb-1 sm:mb-2 font-luxury">Naderia High School</h3>
-                                    <p class="text-purple-200 text-base sm:text-lg font-modern">Secondary Education</p>
-                                </div>
-                                <div class="bg-white bg-opacity-20 px-3 sm:px-4 py-1 sm:py-2 rounded-full text-white font-medium text-sm sm:text-base mt-2 lg:mt-0 self-start lg:self-center font-modern">
-                                    2001 - 2012
-                                </div>
-                            </div>
-                            <p class="text-gray-200 text-sm sm:text-base font-elegant">
-                                Completed comprehensive secondary education with focus on analytical thinking and communication skills.
-                            </p>
-                        </div>
-                    </div>
-                    
-                    <div class="timeline-item pl-8 sm:pl-12 lg:pl-16 fade-in-up">
-                        <div class="glass-effect p-4 sm:p-6 lg:p-8 rounded-xl sm:rounded-2xl hover-lift">
-                            <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-3 sm:mb-4">
-                                <div>
-                                    <h3 class="text-xl sm:text-2xl font-bold text-white mb-1 sm:mb-2">Management Accounting Institute</h3>
-                                    <p class="text-purple-200 text-base sm:text-lg">Financial Management Specialization</p>
-                                </div>
-                                <div class="bg-white bg-opacity-20 px-3 sm:px-4 py-1 sm:py-2 rounded-full text-white font-medium text-sm sm:text-base mt-2 lg:mt-0 self-start lg:self-center">
-                                    2012 - 2013
-                                </div>
-                            </div>
-                            <p class="text-gray-200 text-sm sm:text-base">
-                                Advanced training in management accounting principles and financial analysis methodologies.
-                            </p>
-                        </div>
-                    </div>
-                    
-                    <div class="timeline-item pl-8 sm:pl-12 lg:pl-16 fade-in-up">
-                        <div class="glass-effect p-4 sm:p-6 lg:p-8 rounded-xl sm:rounded-2xl hover-lift">
-                            <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-3 sm:mb-4">
-                                <div>
-                                    <h3 class="text-xl sm:text-2xl font-bold text-white mb-1 sm:mb-2">Muslim English Institute</h3>
-                                    <p class="text-purple-200 text-base sm:text-lg">Business English & Communication</p>
-                                </div>
-                                <div class="bg-white bg-opacity-20 px-3 sm:px-4 py-1 sm:py-2 rounded-full text-white font-medium text-sm sm:text-base mt-2 lg:mt-0 self-start lg:self-center">
-                                    2015 - 2016
-                                </div>
-                            </div>
-                            <p class="text-gray-200 text-sm sm:text-base">
-                                Enhanced English proficiency for international business communication and professional development.
-                            </p>
+                            <h4 class="text-xl font-bold gold-gradient mb-3">Growth</h4>
+                            <p class="text-gray-400">Continuous improvement</p>
                         </div>
                     </div>
                 </div>
@@ -542,87 +473,85 @@
     </section>
 
     <!-- Experience Section -->
-    <section id="experience" class="py-16 sm:py-24 lg:py-32 bg-slate-900">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6">
-            <div class="text-center mb-12 sm:mb-16 lg:mb-20 fade-in-up">
-                <h2 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 text-gradient tracking-wide">Professional Experience</h2>
-                <div class="section-divider w-24 sm:w-32 mx-auto"></div>
+    <section id="experience" class="py-32 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-20 reveal-animation">
+                <h2 class="section-title mb-6 gold-gradient font-display">Professional Experience</h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-yellow-400 to-yellow-600 mx-auto"></div>
             </div>
             
-            <div class="grid lg:grid-cols-2 gap-8 sm:gap-12">
-                <div class="space-y-6 sm:space-y-8">
-                    <div class="professional-card luxury-border p-4 sm:p-6 lg:p-8 rounded-xl sm:rounded-2xl hover-lift slide-in-left">
-                        <div class="flex flex-col sm:flex-row items-start sm:items-center mb-4 sm:mb-6">
-                            <div class="w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 bg-green-500 rounded-xl sm:rounded-2xl flex items-center justify-center mb-3 sm:mb-0 sm:mr-4 lg:mr-6">
-                                <i class="fas fa-seedling text-lg sm:text-xl lg:text-2xl text-white"></i>
+            <div class="max-w-4xl mx-auto">
+                <div class="timeline-line space-y-12">
+                    <div class="reveal-animation relative pl-16">
+                        <div class="timeline-dot"></div>
+                        <div class="premium-card luxury-hover p-8 rounded-2xl">
+                            <div class="flex items-start justify-between mb-6">
+                                <div>
+                                    <h3 class="text-2xl font-bold text-white mb-2 font-display">Sales Associate</h3>
+                                    <p class="text-yellow-400 text-lg font-semibold">Aafarin Dry Fruit Company</p>
+                                </div>
+                                <span class="glass-card px-4 py-2 rounded-full text-sm text-gray-300">June 2022 - July 2025</span>
                             </div>
-                            <div>
-                                <h3 class="text-lg sm:text-xl lg:text-2xl font-bold text-white font-luxury">Sales Associate</h3>
-                                <p class="text-green-400 text-base sm:text-lg font-modern">Aafarin Dry Fruit Company</p>
-                                <p class="text-gray-400 text-sm sm:text-base font-modern">June 2022 - July 2025</p>
-                            </div>
+                            <ul class="text-gray-300 space-y-3">
+                                <li class="flex items-start"><i class="fas fa-check text-yellow-400 mr-4 mt-1"></i>Premium customer relationship management</li>
+                                <li class="flex items-start"><i class="fas fa-check text-yellow-400 mr-4 mt-1"></i>Consistent sales target achievement</li>
+                                <li class="flex items-start"><i class="fas fa-check text-yellow-400 mr-4 mt-1"></i>Comprehensive transaction record management</li>
+                            </ul>
                         </div>
-                        <ul class="text-gray-300 space-y-1 sm:space-y-2 text-sm sm:text-base">
-                            <li class="flex items-start"><i class="fas fa-check text-green-400 mr-2 sm:mr-3 mt-1 flex-shrink-0"></i>Premium customer relationship management</li>
-                            <li class="flex items-start"><i class="fas fa-check text-green-400 mr-2 sm:mr-3 mt-1 flex-shrink-0"></i>Consistent sales target achievement</li>
-                            <li class="flex items-start"><i class="fas fa-check text-green-400 mr-2 sm:mr-3 mt-1 flex-shrink-0"></i>Comprehensive transaction record management</li>
-                        </ul>
                     </div>
                     
-                    <div class="professional-card luxury-border p-4 sm:p-6 lg:p-8 rounded-xl sm:rounded-2xl hover-lift slide-in-left">
-                        <div class="flex flex-col sm:flex-row items-start sm:items-center mb-4 sm:mb-6">
-                            <div class="w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 bg-purple-500 rounded-xl sm:rounded-2xl flex items-center justify-center mb-3 sm:mb-0 sm:mr-4 lg:mr-6">
-                                <i class="fas fa-gem text-lg sm:text-xl lg:text-2xl text-white"></i>
+                    <div class="reveal-animation relative pl-16">
+                        <div class="timeline-dot"></div>
+                        <div class="premium-card luxury-hover p-8 rounded-2xl">
+                            <div class="flex items-start justify-between mb-6">
+                                <div>
+                                    <h3 class="text-2xl font-bold text-white mb-2 font-display">Sales Associate</h3>
+                                    <p class="text-yellow-400 text-lg font-semibold">Medicine Care</p>
+                                </div>
+                                <span class="glass-card px-4 py-2 rounded-full text-sm text-gray-300">August 2018 - January 2020</span>
                             </div>
-                            <div>
-                                <h3 class="text-lg sm:text-xl lg:text-2xl font-bold text-white">Sales Associate</h3>
-                                <p class="text-purple-400 text-base sm:text-lg">Omid Seddiqi Jewellery</p>
-                                <p class="text-gray-400 text-sm sm:text-base">August 2017 - June 2018</p>
-                            </div>
+                            <ul class="text-gray-300 space-y-3">
+                                <li class="flex items-start"><i class="fas fa-check text-yellow-400 mr-4 mt-1"></i>Medical product specialization</li>
+                                <li class="flex items-start"><i class="fas fa-check text-yellow-400 mr-4 mt-1"></i>Healthcare customer service</li>
+                                <li class="flex items-start"><i class="fas fa-check text-yellow-400 mr-4 mt-1"></i>Supply chain coordination</li>
+                            </ul>
                         </div>
-                        <ul class="text-gray-300 space-y-1 sm:space-y-2 text-sm sm:text-base">
-                            <li class="flex items-start"><i class="fas fa-check text-purple-400 mr-2 sm:mr-3 mt-1 flex-shrink-0"></i>Luxury client service excellence</li>
-                            <li class="flex items-start"><i class="fas fa-check text-purple-400 mr-2 sm:mr-3 mt-1 flex-shrink-0"></i>High-value transaction processing</li>
-                            <li class="flex items-start"><i class="fas fa-check text-purple-400 mr-2 sm:mr-3 mt-1 flex-shrink-0"></i>Premium product expertise</li>
-                        </ul>
-                    </div>
-                </div>
-                
-                <div class="space-y-6 sm:space-y-8">
-                    <div class="professional-card luxury-border p-4 sm:p-6 lg:p-8 rounded-xl sm:rounded-2xl hover-lift slide-in-right">
-                        <div class="flex flex-col sm:flex-row items-start sm:items-center mb-4 sm:mb-6">
-                            <div class="w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 bg-blue-500 rounded-xl sm:rounded-2xl flex items-center justify-center mb-3 sm:mb-0 sm:mr-4 lg:mr-6">
-                                <i class="fas fa-pills text-lg sm:text-xl lg:text-2xl text-white"></i>
-                            </div>
-                            <div>
-                                <h3 class="text-lg sm:text-xl lg:text-2xl font-bold text-white">Sales Associate</h3>
-                                <p class="text-blue-400 text-base sm:text-lg">Medicine Care</p>
-                                <p class="text-gray-400 text-sm sm:text-base">August 2018 - January 2020</p>
-                            </div>
-                        </div>
-                        <ul class="text-gray-300 space-y-1 sm:space-y-2 text-sm sm:text-base">
-                            <li class="flex items-start"><i class="fas fa-check text-blue-400 mr-2 sm:mr-3 mt-1 flex-shrink-0"></i>Medical product specialization</li>
-                            <li class="flex items-start"><i class="fas fa-check text-blue-400 mr-2 sm:mr-3 mt-1 flex-shrink-0"></i>Healthcare customer service</li>
-                            <li class="flex items-start"><i class="fas fa-check text-blue-400 mr-2 sm:mr-3 mt-1 flex-shrink-0"></i>Supply chain coordination</li>
-                        </ul>
                     </div>
                     
-                    <div class="professional-card luxury-border p-4 sm:p-6 lg:p-8 rounded-xl sm:rounded-2xl hover-lift slide-in-right">
-                        <div class="flex flex-col sm:flex-row items-start sm:items-center mb-4 sm:mb-6">
-                            <div class="w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 bg-yellow-500 rounded-xl sm:rounded-2xl flex items-center justify-center mb-3 sm:mb-0 sm:mr-4 lg:mr-6">
-                                <i class="fas fa-chart-line text-lg sm:text-xl lg:text-2xl text-white"></i>
+                    <div class="reveal-animation relative pl-16">
+                        <div class="timeline-dot"></div>
+                        <div class="premium-card luxury-hover p-8 rounded-2xl">
+                            <div class="flex items-start justify-between mb-6">
+                                <div>
+                                    <h3 class="text-2xl font-bold text-white mb-2 font-display">Sales Associate</h3>
+                                    <p class="text-yellow-400 text-lg font-semibold">Omid Seddiqi Jewellery</p>
+                                </div>
+                                <span class="glass-card px-4 py-2 rounded-full text-sm text-gray-300">August 2017 - June 2018</span>
                             </div>
-                            <div>
-                                <h3 class="text-lg sm:text-xl lg:text-2xl font-bold text-white">Finance Manager</h3>
-                                <p class="text-yellow-400 text-base sm:text-lg">Afghan Pharma</p>
-                                <p class="text-gray-400 text-sm sm:text-base">January 2016 - August 2017</p>
-                            </div>
+                            <ul class="text-gray-300 space-y-3">
+                                <li class="flex items-start"><i class="fas fa-check text-yellow-400 mr-4 mt-1"></i>Luxury client service excellence</li>
+                                <li class="flex items-start"><i class="fas fa-check text-yellow-400 mr-4 mt-1"></i>High-value transaction processing</li>
+                                <li class="flex items-start"><i class="fas fa-check text-yellow-400 mr-4 mt-1"></i>Premium product expertise</li>
+                            </ul>
                         </div>
-                        <ul class="text-gray-300 space-y-1 sm:space-y-2 text-sm sm:text-base">
-                            <li class="flex items-start"><i class="fas fa-check text-yellow-400 mr-2 sm:mr-3 mt-1 flex-shrink-0"></i>Financial operations management</li>
-                            <li class="flex items-start"><i class="fas fa-check text-yellow-400 mr-2 sm:mr-3 mt-1 flex-shrink-0"></i>Budget planning and analysis</li>
-                            <li class="flex items-start"><i class="fas fa-check text-yellow-400 mr-2 sm:mr-3 mt-1 flex-shrink-0"></i>Strategic financial reporting</li>
-                        </ul>
+                    </div>
+                    
+                    <div class="reveal-animation relative pl-16">
+                        <div class="timeline-dot"></div>
+                        <div class="premium-card luxury-hover p-8 rounded-2xl">
+                            <div class="flex items-start justify-between mb-6">
+                                <div>
+                                    <h3 class="text-2xl font-bold text-white mb-2 font-display">Finance Manager</h3>
+                                    <p class="text-yellow-400 text-lg font-semibold">Afghan Pharma</p>
+                                </div>
+                                <span class="glass-card px-4 py-2 rounded-full text-sm text-gray-300">January 2016 - August 2017</span>
+                            </div>
+                            <ul class="text-gray-300 space-y-3">
+                                <li class="flex items-start"><i class="fas fa-check text-yellow-400 mr-4 mt-1"></i>Financial operations management</li>
+                                <li class="flex items-start"><i class="fas fa-check text-yellow-400 mr-4 mt-1"></i>Budget planning and analysis</li>
+                                <li class="flex items-start"><i class="fas fa-check text-yellow-400 mr-4 mt-1"></i>Strategic financial reporting</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -630,230 +559,179 @@
     </section>
 
     <!-- Skills Section -->
-    <section id="skills" class="py-16 sm:py-24 lg:py-32 bg-gray-800">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6">
-            <div class="text-center mb-12 sm:mb-16 lg:mb-20 fade-in-up">
-                <h2 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 text-gradient tracking-wide">Core Skills</h2>
-                <div class="section-divider w-24 sm:w-32 mx-auto"></div>
+    <section id="skills" class="py-32 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-20 reveal-animation">
+                <h2 class="section-title mb-6 gold-gradient font-display">Core Skills</h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-yellow-400 to-yellow-600 mx-auto"></div>
             </div>
             
-            <div class="grid lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16">
-                <div class="space-y-6 sm:space-y-8 slide-in-left">
-                    <div class="professional-card luxury-border p-4 sm:p-6 lg:p-8 rounded-xl sm:rounded-2xl hover-lift">
-                        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-3 sm:mb-4">
-                            <div class="flex items-center mb-2 sm:mb-0">
-                                <i class="fas fa-chart-line text-2xl sm:text-3xl text-blue-400 mr-3 sm:mr-4"></i>
-                                <h3 class="text-lg sm:text-xl lg:text-2xl font-bold text-white font-luxury">Financial Management</h3>
+            <div class="grid lg:grid-cols-2 gap-16">
+                <div class="space-y-10">
+                    <div class="reveal-animation">
+                        <div class="premium-card luxury-hover p-8 rounded-2xl">
+                            <div class="flex items-center justify-between mb-6">
+                                <div class="flex items-center">
+                                    <i class="fas fa-chart-line text-3xl text-yellow-400 mr-4"></i>
+                                    <h3 class="text-2xl font-bold text-white font-display">Financial Management</h3>
+                                </div>
+                                <span class="text-yellow-400 font-bold text-2xl">95%</span>
                             </div>
-                            <span class="text-blue-400 font-bold text-lg sm:text-xl font-modern">95%</span>
+                            <div class="w-full bg-gray-800 rounded-full h-4 mb-4 overflow-hidden">
+                                <div class="skill-meter h-4 rounded-full" style="--width: 95%"></div>
+                            </div>
+                            <p class="text-gray-400">Advanced budgeting, analysis, and strategic financial planning</p>
                         </div>
-                        <div class="w-full bg-gray-700 rounded-full h-2 sm:h-3 mb-3 sm:mb-4">
-                            <div class="skill-progress bg-gradient-to-r from-blue-400 to-blue-600 h-2 sm:h-3 rounded-full" style="--width: 95%"></div>
-                        </div>
-                        <p class="text-gray-300 text-sm sm:text-base font-elegant">Advanced budgeting, analysis, and strategic financial planning</p>
                     </div>
                     
-                    <div class="professional-card luxury-border p-4 sm:p-6 lg:p-8 rounded-xl sm:rounded-2xl hover-lift">
-                        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-3 sm:mb-4">
-                            <div class="flex items-center mb-2 sm:mb-0">
-                                <i class="fas fa-handshake text-2xl sm:text-3xl text-green-400 mr-3 sm:mr-4"></i>
-                                <h3 class="text-lg sm:text-xl lg:text-2xl font-bold text-white">Sales Excellence</h3>
+                    <div class="reveal-animation">
+                        <div class="premium-card luxury-hover p-8 rounded-2xl">
+                            <div class="flex items-center justify-between mb-6">
+                                <div class="flex items-center">
+                                    <i class="fas fa-handshake text-3xl text-yellow-400 mr-4"></i>
+                                    <h3 class="text-2xl font-bold text-white font-display">Sales Excellence</h3>
+                                </div>
+                                <span class="text-yellow-400 font-bold text-2xl">98%</span>
                             </div>
-                            <span class="text-green-400 font-bold text-lg sm:text-xl">98%</span>
+                            <div class="w-full bg-gray-800 rounded-full h-4 mb-4 overflow-hidden">
+                                <div class="skill-meter h-4 rounded-full" style="--width: 98%"></div>
+                            </div>
+                            <p class="text-gray-400">Exceptional client relations and consistent target achievement</p>
                         </div>
-                        <div class="w-full bg-gray-700 rounded-full h-2 sm:h-3 mb-3 sm:mb-4">
-                            <div class="skill-progress bg-gradient-to-r from-green-400 to-green-600 h-2 sm:h-3 rounded-full" style="--width: 98%"></div>
-                        </div>
-                        <p class="text-gray-300 text-sm sm:text-base">Exceptional client relations and consistent target achievement</p>
                     </div>
                     
-                    <div class="professional-card luxury-border p-4 sm:p-6 lg:p-8 rounded-xl sm:rounded-2xl hover-lift">
-                        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-3 sm:mb-4">
-                            <div class="flex items-center mb-2 sm:mb-0">
-                                <i class="fas fa-users text-2xl sm:text-3xl text-purple-400 mr-3 sm:mr-4"></i>
-                                <h3 class="text-lg sm:text-xl lg:text-2xl font-bold text-white">Customer Service</h3>
+                    <div class="reveal-animation">
+                        <div class="premium-card luxury-hover p-8 rounded-2xl">
+                            <div class="flex items-center justify-between mb-6">
+                                <div class="flex items-center">
+                                    <i class="fas fa-users text-3xl text-yellow-400 mr-4"></i>
+                                    <h3 class="text-2xl font-bold text-white font-display">Customer Service</h3>
+                                </div>
+                                <span class="text-yellow-400 font-bold text-2xl">96%</span>
                             </div>
-                            <span class="text-purple-400 font-bold text-lg sm:text-xl">96%</span>
+                            <div class="w-full bg-gray-800 rounded-full h-4 mb-4 overflow-hidden">
+                                <div class="skill-meter h-4 rounded-full" style="--width: 96%"></div>
+                            </div>
+                            <p class="text-gray-400">Outstanding customer satisfaction and relationship building</p>
                         </div>
-                        <div class="w-full bg-gray-700 rounded-full h-2 sm:h-3 mb-3 sm:mb-4">
-                            <div class="skill-progress bg-gradient-to-r from-purple-400 to-purple-600 h-2 sm:h-3 rounded-full" style="--width: 96%"></div>
-                        </div>
-                        <p class="text-gray-300 text-sm sm:text-base">Outstanding customer satisfaction and relationship building</p>
                     </div>
                 </div>
                 
-                <div class="space-y-6 sm:space-y-8 slide-in-right">
-                    <div class="professional-card luxury-border p-4 sm:p-6 lg:p-8 rounded-xl sm:rounded-2xl hover-lift">
-                        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-3 sm:mb-4">
-                            <div class="flex items-center mb-2 sm:mb-0">
-                                <i class="fas fa-comments text-2xl sm:text-3xl text-yellow-400 mr-3 sm:mr-4"></i>
-                                <h3 class="text-lg sm:text-xl lg:text-2xl font-bold text-white">Communication</h3>
+                <div class="space-y-10">
+                    <div class="reveal-animation">
+                        <div class="premium-card luxury-hover p-8 rounded-2xl">
+                            <div class="flex items-center justify-between mb-6">
+                                <div class="flex items-center">
+                                    <i class="fas fa-comments text-3xl text-yellow-400 mr-4"></i>
+                                    <h3 class="text-2xl font-bold text-white font-display">Communication</h3>
+                                </div>
+                                <span class="text-yellow-400 font-bold text-2xl">92%</span>
                             </div>
-                            <span class="text-yellow-400 font-bold text-lg sm:text-xl">92%</span>
+                            <div class="w-full bg-gray-800 rounded-full h-4 mb-4 overflow-hidden">
+                                <div class="skill-meter h-4 rounded-full" style="--width: 92%"></div>
+                            </div>
+                            <p class="text-gray-400">Multilingual business communication and presentation skills</p>
                         </div>
-                        <div class="w-full bg-gray-700 rounded-full h-2 sm:h-3 mb-3 sm:mb-4">
-                            <div class="skill-progress bg-gradient-to-r from-yellow-400 to-yellow-600 h-2 sm:h-3 rounded-full" style="--width: 92%"></div>
-                        </div>
-                        <p class="text-gray-300 text-sm sm:text-base">Multilingual business communication and presentation skills</p>
                     </div>
                     
-                    <div class="professional-card luxury-border p-4 sm:p-6 lg:p-8 rounded-xl sm:rounded-2xl hover-lift">
-                        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-3 sm:mb-4">
-                            <div class="flex items-center mb-2 sm:mb-0">
-                                <i class="fas fa-lightbulb text-2xl sm:text-3xl text-red-400 mr-3 sm:mr-4"></i>
-                                <h3 class="text-lg sm:text-xl lg:text-2xl font-bold text-white">Product Knowledge</h3>
+                    <div class="reveal-animation">
+                        <div class="premium-card luxury-hover p-8 rounded-2xl">
+                            <div class="flex items-center justify-between mb-6">
+                                <div class="flex items-center">
+                                    <i class="fas fa-lightbulb text-3xl text-yellow-400 mr-4"></i>
+                                    <h3 class="text-2xl font-bold text-white font-display">Product Knowledge</h3>
+                                </div>
+                                <span class="text-yellow-400 font-bold text-2xl">90%</span>
                             </div>
-                            <span class="text-red-400 font-bold text-lg sm:text-xl">90%</span>
+                            <div class="w-full bg-gray-800 rounded-full h-4 mb-4 overflow-hidden">
+                                <div class="skill-meter h-4 rounded-full" style="--width: 90%"></div>
+                            </div>
+                            <p class="text-gray-400">Deep understanding across multiple industry sectors</p>
                         </div>
-                        <div class="w-full bg-gray-700 rounded-full h-2 sm:h-3 mb-3 sm:mb-4">
-                            <div class="skill-progress bg-gradient-to-r from-red-400 to-red-600 h-2 sm:h-3 rounded-full" style="--width: 90%"></div>
-                        </div>
-                        <p class="text-gray-300 text-sm sm:text-base">Deep understanding across multiple industry sectors</p>
                     </div>
                     
-                    <div class="professional-card luxury-border p-4 sm:p-6 lg:p-8 rounded-xl sm:rounded-2xl hover-lift">
-                        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-3 sm:mb-4">
-                            <div class="flex items-center mb-2 sm:mb-0">
-                                <i class="fas fa-crown text-2xl sm:text-3xl text-pink-400 mr-3 sm:mr-4"></i>
-                                <h3 class="text-lg sm:text-xl lg:text-2xl font-bold text-white">Leadership</h3>
+                    <div class="reveal-animation">
+                        <div class="premium-card luxury-hover p-8 rounded-2xl">
+                            <div class="flex items-center justify-between mb-6">
+                                <div class="flex items-center">
+                                    <i class="fas fa-crown text-3xl text-yellow-400 mr-4"></i>
+                                    <h3 class="text-2xl font-bold text-white font-display">Leadership</h3>
+                                </div>
+                                <span class="text-yellow-400 font-bold text-2xl">94%</span>
                             </div>
-                            <span class="text-pink-400 font-bold text-lg sm:text-xl">94%</span>
-                        </div>
-                        <div class="w-full bg-gray-700 rounded-full h-2 sm:h-3 mb-3 sm:mb-4">
-                            <div class="skill-progress bg-gradient-to-r from-pink-400 to-pink-600 h-2 sm:h-3 rounded-full" style="--width: 94%"></div>
-                        </div>
-                        <p class="text-gray-300 text-sm sm:text-base">Strategic team management and organizational development</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimonials Section -->
-    <section class="py-16 sm:py-24 lg:py-32 bg-gray-900 relative">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6">
-            <div class="text-center mb-12 sm:mb-16 lg:mb-20 fade-in-up">
-                <h2 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 text-gradient tracking-wide">Professional Excellence</h2>
-                <div class="section-divider w-24 sm:w-32 mx-auto"></div>
-                <p class="text-lg sm:text-xl text-gray-300 max-w-3xl mx-auto px-4 font-elegant">
-                    Recognized for outstanding performance and dedication across industries
-                </p>
-            </div>
-            
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="professional-card luxury-border p-6 sm:p-8 rounded-2xl hover-lift fade-in-up">
-                    <div class="flex items-center mb-4">
-                        <div class="w-12 h-12 accent-gradient rounded-full flex items-center justify-center mr-4">
-                            <i class="fas fa-quote-left text-white"></i>
-                        </div>
-                        <div>
-                            <h4 class="font-bold text-white">Industry Recognition</h4>
-                            <p class="text-gray-400 text-sm">Performance Excellence</p>
+                            <div class="w-full bg-gray-800 rounded-full h-4 mb-4 overflow-hidden">
+                                <div class="skill-meter h-4 rounded-full" style="--width: 94%"></div>
+                            </div>
+                            <p class="text-gray-400">Strategic team management and organizational development</p>
                         </div>
                     </div>
-                    <p class="text-gray-300 text-sm sm:text-base leading-relaxed">
-                        "Consistently delivers exceptional results with unwavering professionalism and strategic insight that drives business growth."
-                    </p>
-                </div>
-                
-                <div class="professional-card luxury-border p-6 sm:p-8 rounded-2xl hover-lift fade-in-up">
-                    <div class="flex items-center mb-4">
-                        <div class="w-12 h-12 accent-gradient rounded-full flex items-center justify-center mr-4">
-                            <i class="fas fa-star text-white"></i>
-                        </div>
-                        <div>
-                            <h4 class="font-bold text-white">Client Satisfaction</h4>
-                            <p class="text-gray-400 text-sm">Premium Service</p>
-                        </div>
-                    </div>
-                    <p class="text-gray-300 text-sm sm:text-base leading-relaxed">
-                        "Demonstrates exceptional customer service skills and maintains the highest standards of professional excellence."
-                    </p>
-                </div>
-                
-                <div class="professional-card luxury-border p-6 sm:p-8 rounded-2xl hover-lift fade-in-up md:col-span-2 lg:col-span-1">
-                    <div class="flex items-center mb-4">
-                        <div class="w-12 h-12 accent-gradient rounded-full flex items-center justify-center mr-4">
-                            <i class="fas fa-trophy text-white"></i>
-                        </div>
-                        <div>
-                            <h4 class="font-bold text-white">Leadership Impact</h4>
-                            <p class="text-gray-400 text-sm">Strategic Vision</p>
-                        </div>
-                    </div>
-                    <p class="text-gray-300 text-sm sm:text-base leading-relaxed">
-                        "Brings innovative solutions and strategic thinking that transforms business operations and drives sustainable growth."
-                    </p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-16 sm:py-24 lg:py-32 gradient-bg relative">
-        <div class="absolute inset-0 bg-black bg-opacity-50"></div>
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 relative z-10">
-            <div class="text-center mb-12 sm:mb-16 lg:mb-20 fade-in-up">
-                <h2 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 text-white tracking-wide">Let's Connect</h2>
-                <div class="section-divider w-24 sm:w-32 mx-auto"></div>
-                <p class="text-lg sm:text-xl text-gray-200 max-w-3xl mx-auto px-4 font-elegant">
+    <section id="contact" class="py-32 relative">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-20 reveal-animation">
+                <h2 class="section-title mb-6 gold-gradient font-display">Let's Connect</h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-yellow-400 to-yellow-600 mx-auto mb-8"></div>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto">
                     Ready to discuss opportunities and explore how we can work together
                 </p>
             </div>
             
-            <div class="max-w-4xl mx-auto">
-                <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8">
-                    <div class="glass-effect p-6 sm:p-8 rounded-xl sm:rounded-2xl hover-lift text-center fade-in-up">
-                        <div class="w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 bg-blue-500 rounded-xl sm:rounded-2xl flex items-center justify-center mx-auto mb-4 sm:mb-6">
-                            <i class="fas fa-envelope text-lg sm:text-xl lg:text-2xl text-white"></i>
-                        </div>
-                        <h4 class="text-lg sm:text-xl lg:text-2xl font-bold text-white mb-2">Email</h4>
-                        <p class="text-gray-200 text-sm break-all">khwajazadaamir@yahoo.com</p>
+            <div class="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+                <div class="premium-card luxury-hover p-10 rounded-2xl text-center reveal-animation">
+                    <div class="w-20 h-20 bg-gradient-to-r from-blue-400 to-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-8">
+                        <i class="fas fa-envelope text-3xl text-white"></i>
                     </div>
-                    
-                    <div class="glass-effect p-6 sm:p-8 rounded-xl sm:rounded-2xl hover-lift text-center fade-in-up">
-                        <div class="w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 bg-green-500 rounded-xl sm:rounded-2xl flex items-center justify-center mx-auto mb-4 sm:mb-6">
-                            <i class="fas fa-phone text-lg sm:text-xl lg:text-2xl text-white"></i>
-                        </div>
-                        <h4 class="text-lg sm:text-xl lg:text-2xl font-bold text-white mb-2">Phone</h4>
-                        <p class="text-gray-200 text-sm">+93 XXX XXX XXXX</p>
+                    <h4 class="text-2xl font-bold gold-gradient mb-4 font-display">Email</h4>
+                    <p class="text-gray-300 break-all">khwajazadaamir@yahoo.com</p>
+                </div>
+                
+                <div class="premium-card luxury-hover p-10 rounded-2xl text-center reveal-animation">
+                    <div class="w-20 h-20 bg-gradient-to-r from-green-400 to-green-600 rounded-2xl flex items-center justify-center mx-auto mb-8">
+                        <i class="fas fa-phone text-3xl text-white"></i>
                     </div>
-                    
-                    <div class="glass-effect p-6 sm:p-8 rounded-xl sm:rounded-2xl hover-lift text-center fade-in-up sm:col-span-2 md:col-span-1">
-                        <div class="w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 bg-purple-500 rounded-xl sm:rounded-2xl flex items-center justify-center mx-auto mb-4 sm:mb-6">
-                            <i class="fas fa-map-marker-alt text-lg sm:text-xl lg:text-2xl text-white"></i>
-                        </div>
-                        <h4 class="text-lg sm:text-xl lg:text-2xl font-bold text-white mb-2">Location</h4>
-                        <p class="text-gray-200 text-sm">Kabul, Afghanistan</p>
+                    <h4 class="text-2xl font-bold gold-gradient mb-4 font-display">Phone</h4>
+                    <p class="text-gray-300">+93 XXX XXX XXXX</p>
+                </div>
+                
+                <div class="premium-card luxury-hover p-10 rounded-2xl text-center reveal-animation">
+                    <div class="w-20 h-20 bg-gradient-to-r from-purple-400 to-purple-600 rounded-2xl flex items-center justify-center mx-auto mb-8">
+                        <i class="fas fa-map-marker-alt text-3xl text-white"></i>
                     </div>
+                    <h4 class="text-2xl font-bold gold-gradient mb-4 font-display">Location</h4>
+                    <p class="text-gray-300">Kabul, Afghanistan</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-gray-900 py-12 sm:py-16 border-t border-gray-700">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6">
+    <footer class="py-16 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-6">
             <div class="text-center">
-                <div class="mb-6 sm:mb-8">
-                    <h3 class="text-2xl sm:text-3xl font-bold text-gradient mb-3 sm:mb-4 font-luxury tracking-wide">Khawaja Amir M Khwajazada</h3>
-                    <p class="text-gray-400 text-base sm:text-lg font-elegant">Finance & Sales Professional</p>
+                <div class="mb-10">
+                    <h3 class="text-3xl font-bold gold-gradient mb-4 font-display">Khawaja Amir M Khwajazada</h3>
+                    <p class="text-gray-400 text-lg">Elite Finance & Sales Professional</p>
                 </div>
                 
-                <div class="flex justify-center space-x-4 sm:space-x-6 mb-6 sm:mb-8">
-                    <a href="#" class="w-12 h-12 sm:w-14 sm:h-14 glass-effect rounded-full flex items-center justify-center hover-lift text-white">
-                        <i class="fab fa-linkedin text-lg sm:text-xl"></i>
+                <div class="flex justify-center space-x-8 mb-10">
+                    <a href="#" class="w-16 h-16 glass-card rounded-full flex items-center justify-center luxury-hover text-white">
+                        <i class="fab fa-linkedin text-2xl"></i>
                     </a>
-                    <a href="#" class="w-12 h-12 sm:w-14 sm:h-14 glass-effect rounded-full flex items-center justify-center hover-lift text-white">
-                        <i class="fas fa-file-download text-lg sm:text-xl"></i>
+                    <a href="mailto:khwajazadaamir@yahoo.com" class="w-16 h-16 glass-card rounded-full flex items-center justify-center luxury-hover text-white">
+                        <i class="fas fa-envelope text-2xl"></i>
                     </a>
-                    <a href="#" class="w-12 h-12 sm:w-14 sm:h-14 glass-effect rounded-full flex items-center justify-center hover-lift text-white">
-                        <i class="fas fa-envelope text-lg sm:text-xl"></i>
+                    <a href="#" class="w-16 h-16 glass-card rounded-full flex items-center justify-center luxury-hover text-white">
+                        <i class="fas fa-file-download text-2xl"></i>
                     </a>
                 </div>
                 
-                <div class="border-t border-gray-700 pt-6 sm:pt-8">
-                    <p class="text-gray-500 text-sm sm:text-base">© 2024 Khawaja Amir M Khwajazada. All rights reserved.</p>
+                <div class="border-t border-gray-800 pt-8">
+                    <p class="text-gray-500">© 2024 Khawaja Amir M Khwajazada. All rights reserved.</p>
                 </div>
             </div>
         </div>
@@ -902,34 +780,27 @@
             });
         });
 
-        // Intersection Observer for animations
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -100px 0px'
-        };
-
+        // Reveal animations on scroll
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
-                    entry.target.classList.add('animate-in');
+                    entry.target.classList.add('revealed');
                     
-                    // Animate skill progress bars
-                    const skillBars = entry.target.querySelectorAll('.skill-progress');
-                    skillBars.forEach(bar => {
+                    // Animate skill meters
+                    const skillMeters = entry.target.querySelectorAll('.skill-meter');
+                    skillMeters.forEach(meter => {
                         setTimeout(() => {
-                            bar.classList.add('animate');
+                            meter.classList.add('animate');
                         }, 500);
                     });
                 }
             });
-        }, observerOptions);
+        }, { threshold: 0.1 });
 
-        // Observe all animated elements
-        document.querySelectorAll('.fade-in-up, .slide-in-left, .slide-in-right').forEach(el => {
+        // Observe reveal elements
+        document.querySelectorAll('.reveal-animation').forEach(el => {
             observer.observe(el);
         });
-
-
 
         // Active navigation
         window.addEventListener('scroll', () => {
@@ -945,23 +816,47 @@
             });
 
             navLinks.forEach(link => {
-                link.classList.remove('text-blue-300');
+                link.classList.remove('active');
                 if (link.getAttribute('href') === `#${current}`) {
-                    link.classList.add('text-blue-300');
+                    link.classList.add('active');
                 }
             });
         });
 
-        // Parallax effect for floating shapes
-        window.addEventListener('scroll', () => {
-            const scrolled = window.pageYOffset;
-            const parallax = document.querySelectorAll('.floating-animation');
-            
-            parallax.forEach(element => {
-                const speed = 0.5;
-                element.style.transform = `translateY(${scrolled * speed}px)`;
+        // Counter animation
+        function animateCounters() {
+            const counters = document.querySelectorAll('.stats-counter');
+            counters.forEach(counter => {
+                const target = parseInt(counter.textContent);
+                const increment = target / 100;
+                let current = 0;
+                
+                const timer = setInterval(() => {
+                    current += increment;
+                    if (current >= target) {
+                        counter.textContent = target + (counter.textContent.includes('+') ? '+' : '') + (counter.textContent.includes('%') ? '%' : '');
+                        clearInterval(timer);
+                    } else {
+                        counter.textContent = Math.floor(current) + (counter.textContent.includes('+') ? '+' : '') + (counter.textContent.includes('%') ? '%' : '');
+                    }
+                }, 20);
+            });
+        }
+
+        // Trigger counter animation when stats section is visible
+        const statsObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateCounters();
+                    statsObserver.unobserve(entry.target);
+                }
             });
         });
+
+        const statsSection = document.querySelector('.stats-counter').closest('section');
+        if (statsSection) {
+            statsObserver.observe(statsSection);
+        }
     </script>
-<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'980b2a6dd1c55a17',t:'MTc1ODEzODk3NS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9810402d733a59f4',t:'MTc1ODE5MjI5NC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
